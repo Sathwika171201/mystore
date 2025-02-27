@@ -117,27 +117,27 @@ const hideCart = () => {
 
 function showLogin() {
   let str = `
-  <div class='login'>
-      <h2>Login Form</h2>
+  <div class='login bg-dark'>
+      <h2 class="text-light">Login Form</h2>
       <div id='msg'></div>
-      <p><input id="email" placeholder='Email Address' type="text"></p>
-      <p><input id="password" placeholder='Password' type="password"></p>
-      <button onclick='chkUser()'>Log In</button>
-      <p><button onclick='showForm()'>Create Account</button></p>
+      <p class="text-light"><input id="email" placeholder='Email Address' type="text"></p>
+      <p class="text-light"><input id="password" placeholder='Password' type="password"></p>
+      <button onclick='chkUser()' class="btn btn-outline-light m-3 p-3">Log In</button>
+      <p><button onclick='showForm()'class="btn btn-outline-light m-3 p-3">Create Account</button></p>
   </div>
   `;
   root.innerHTML = str;
 }
 
 function showForm() {
-  let str = `<div class='registration'>
-  <h2>Registration Form</h2>
+  let str = `<div class='registration  bg-secondary'>
+  <h2 class="text-light">Registration Form</h2>
   <p><input type="text" id="name" placeholder="Name"></p>
   <p><input type="text" id="email" placeholder="Email"></p>
   <p><input type="password" id="password" placeholder="Password"></p>
   <p><input type="date" id="dob"></p>
-  <p><button onclick='addUser()'>Submit</button></p>
-  <p>Already a member?<button onclick='showLogin()'>Login Here</button></p>
+  <p><button onclick='addUser()' class="btn btn-outline-info" m-5 p-5>Submit</button></p>
+  <p>Already a member?<button onclick='showLogin()'class="btn btn-outline-info" m-5 p-5>Login Here</button></p>
   `;
   root.innerHTML = str + "</div>";
 }
@@ -183,12 +183,15 @@ const showProducts = () => {
       let str = "<div class='row'>";
       products.map((value) => {
         str += `
-          <div class='box'>
-          <h3>${value.name}</h3>
-          <p>${value.desc}</p>
-          <h4>$${value.price}</h4>
-          <button onclick=addToCart(${value.id})>Add to Cart</button>
-          </div>
+          <div class="card m-5 p-3" style="width: 18rem; ">
+<img class="card-img-top" src=${value.img} alt="Card image cap">
+<div class="card-body">
+  <h5 class="card-title">${value.name}</h5>
+  <p class="card-text">${value.desc}</p>
+  <h4>$${value.price}</h4>
+  <button onclick="addToCart(${value.id})" class="btn btn-outline-info">Add to cart</button>
+</div>
+</div>
           `;
       });
       divProducts.innerHTML = str + "</div>";
