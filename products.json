@@ -4,41 +4,41 @@
       "name": "Product 1",
       "desc": "Description of the product. Description of the product. ",
       "price": 25,
-      "img":"assets/images/p1.png"
+      "img":"assets/images/p1.PNG"
     },
     {
       "id": 2,
       "name": "Product 2",
       "desc": "Description of the product. Description of the product. ",
       "price": 45,
-      "img":"assets/images/p2.png"
+      "img":"assets/images/p2.PNG"
     },
     {
       "id": 3,
       "name": "Product 3",
       "desc": "Description of the product. Description of the product. ",
       "price": 30,
-      "img":"assets/images/p3.png"
+      "img":"assets/images/p3.PNG"
     },
     {
         "id": 4,
         "name": "Product 4",
         "desc": "Description of the product. Description of the product. ",
         "price": 60,
-        "img":"assets/images/p4.png"
+        "img":"assets/images/p4.PNG"
       },
       {
         "id": 5,
         "name": "Product 5",
         "desc": "Description of the product. Description of the product. ",
         "price": 30,
-        "img":"assets/images/p5.png"
+        "img":"assets/images/p5.PNG"
       },
       {
         "id": 6,
         "name": "Product 6",
         "desc": "Description of the product. Description of the product. ",
         "price": 45,
-        "img":"assets/images/p1.png"
+        "img":"assets/images/p1.PNG"
       }
   ]
